@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormHub Embed Example</title>
+  <style>
+    #myFormContainer {
+      max-width: 500px;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>FormHub Embed Demo</h1>
+
+  <!-- Container where the form will load -->
+  <div id="myFormContainer"></div>
+
+  <!-- Load embed.js -->
+  <script src="http://localhost:5173/embed.js" data-form-id="68f0af12f8d7a2b7a11da1f0"></script>
+
+  <script>
+    // Load form into the container
+    FormHubEmbed.load({
+      formId: "68f0af12f8d7a2b7a11da1f0", // Replace with real form ID from your backend
+      targetId: "myFormContainer",
+      backendUrl: "http://localhost:4000" // Replace with your backend URL
+    });
+  </script>
+</body>
+</html>
